@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#ff2244</color>
+    <color name="red2">#ff5500</color>
+    <color name="bg">#05070f</color>
+    <color name="bg2">#0b0f1e</color>
+    <color name="green">#00e676</color>
+    <color name="yellow">#ffd600</color>
+    <color name="blue">#2979ff</color>
+    <color name="text">#e8eaf0</color>
+    <color name="dim">#7a8099</color>
+    <color name="card">#0d1525</color>
+    <color name="transparent">#00000000</color>
+</resources>
