@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05070f"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/card_bg"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⚡ FAROUK GAME SPACE"
+                android:textColor="#ff2244"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"/>
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏳ تهيئة..."
+                android:textColor="#7a8099"
+                android:textSize="11sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical"
+                android:background="@drawable/card_bg" android:padding="10dp"
+                android:layout_marginEnd="6dp" android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="CPU" android:textColor="#7a8099" android:textSize="10sp"/>
+                <TextView android:id="@+id/tv_cpu" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="--"
+                    android:textColor="#ffd600" android:textSize="18sp" android:textStyle="bold"
+                    android:fontFamily="monospace"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical"
+                android:background="@drawable/card_bg" android:padding="10dp"
+                android:layout_marginEnd="6dp" android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="RAM" android:textColor="#7a8099" android:textSize="10sp"/>
+                <TextView android:id="@+id/tv_ram" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="--"
+                    android:textColor="#2979ff" android:textSize="18sp" android:textStyle="bold"
+                    android:fontFamily="monospace"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical"
+                android:background="@drawable/card_bg" android:padding="10dp"
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="BAT" android:textColor="#7a8099" android:textSize="10sp"/>
+                <TextView android:id="@+id/tv_bat" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="--"
+                    android:textColor="#00e676" android:textSize="18sp" android:textStyle="bold"
+                    android:fontFamily="monospace"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical"
+                android:background="@drawable/card_bg" android:padding="10dp"
+                android:layout_marginStart="6dp" android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="FPS" android:textColor="#7a8099" android:textSize="10sp"/>
+                <TextView android:id="@+id/tv_fps" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="--"
+                    android:textColor="#ff2244" android:textSize="18sp" android:textStyle="bold"
+                    android:fontFamily="monospace"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🚀 تعزيز الأداء" android:textColor="#ff2244"
+            android:textSize="12sp" android:fontFamily="monospace"
+            android:layout_marginBottom="8dp"/>
+
+        <Button android:id="@+id/btn_boost"
+            android:layout_width="match_parent" android:layout_height="60dp"
+            android:text="⚡ BOOST" android:textSize="18sp" android:textStyle="bold"
+            android:textColor="#ffffff" android:backgroundTint="#ff2244"
+            android:layout_marginBottom="12dp"/>
+
+        <Button android:id="@+id/btn_toggle_overlay"
+            android:layout_width="match_parent" android:layout_height="50dp"
+            android:text="🎮 تفعيل Side Bar" android:textSize="15sp"
+            android:textColor="#ffffff" android:backgroundTint="#1a2a4a"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🎯 ملف الأداء" android:textColor="#ff2244"
+            android:textSize="12sp" android:fontFamily="monospace"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="14dp">
+            <Button android:id="@+id/btn_profile_save"
+                android:layout_width="0dp" android:layout_height="44dp"
+                android:layout_weight="1" android:text="🌿 توفير"
+                android:textSize="12sp" android:textColor="#ffffff"
+                android:backgroundTint="#0a1a0a" android:layout_marginEnd="6dp"/>
+            <Button android:id="@+id/btn_profile_balanced"
+                android:layout_width="0dp" android:layout_height="44dp"
+                android:layout_weight="1" android:text="⚖️ متوازن"
+                android:textSize="12sp" android:textColor="#ffffff"
+                android:backgroundTint="#1a1a0a" android:layout_marginEnd="6dp"/>
+            <Button android:id="@+id/btn_profile_performance"
+                android:layout_width="0dp" android:layout_height="44dp"
+                android:layout_weight="1" android:text="🏆 أداء"
+                android:textSize="12sp" android:textColor="#ffffff"
+                android:backgroundTint="#2a0a0a"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🔧 التحسينات" android:textColor="#ff2244"
+            android:textSize="12sp" android:fontFamily="monospace"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/card_bg"
+            android:padding="12dp" android:layout_marginBottom="14dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="42dp"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="😴 تعطيل Doze Mode"
+                    android:textColor="#e8eaf0" android:textSize="13sp"/>
+                <Switch android:id="@+id/sw_doze" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:thumbTint="#ff2244"
+                    android:trackTint="#3a0a0a"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#1a2030"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="42dp"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="⚡ تسريع الرسوم (0.5x)"
+                    android:textColor="#e8eaf0" android:textSize="13sp"/>
+                <Switch android:id="@+id/sw_anim" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:thumbTint="#ff2244"
+                    android:trackTint="#3a0a0a"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#1a2030"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="42dp"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="🌐 DNS Gaming (Google)"
+                    android:textColor="#e8eaf0" android:textSize="13sp"/>
+                <Switch android:id="@+id/sw_dns" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:thumbTint="#ff2244"
+                    android:trackTint="#3a0a0a"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#1a2030"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="42dp"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="📶 تثبيت WiFi"
+                    android:textColor="#e8eaf0" android:textSize="13sp"/>
+                <Switch android:id="@+id/sw_wifi" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:thumbTint="#ff2244"
+                    android:trackTint="#3a0a0a"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#1a2030"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="42dp"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="📳 إيقاف Haptic"
+                    android:textColor="#e8eaf0" android:textSize="13sp"/>
+                <Switch android:id="@+id/sw_haptic" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:thumbTint="#ff2244"
+                    android:trackTint="#3a0a0a"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#1a2030"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="42dp"
+                android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="👆 Touch Boost"
+                    android:textColor="#e8eaf0" android:textSize="13sp"/>
+                <Switch android:id="@+id/sw_touch" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:thumbTint="#ff2244"
+                    android:trackTint="#3a0a0a"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="⚙️ أوامر النظام" android:textColor="#ff2244"
+            android:textSize="12sp" android:fontFamily="monospace"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/card_bg"
+            android:padding="10dp" android:layout_marginBottom="14dp">
+            <Button android:id="@+id/btn_killbg"
+                android:layout_width="match_parent" android:layout_height="44dp"
+                android:text="💀 إيقاف التطبيقات الخلفية"
+                android:textSize="13sp" android:textColor="#e8eaf0"
+                android:backgroundTint="#0d1525" android:layout_marginBottom="6dp"/>
+            <Button android:id="@+id/btn_gpu"
+                android:layout_width="match_parent" android:layout_height="44dp"
+                android:text="🎮 تفعيل GPU Rendering"
+                android:textSize="13sp" android:textColor="#e8eaf0"
+                android:backgroundTint="#0d1525" android:layout_marginBottom="6dp"/>
+            <Button android:id="@+id/btn_dns"
+                android:layout_width="match_parent" android:layout_height="44dp"
+                android:text="🌐 تطبيق DNS الاحترافي"
+                android:textSize="13sp" android:textColor="#e8eaf0"
+                android:backgroundTint="#0d1525" android:layout_marginBottom="6dp"/>
+            <Button android:id="@+id/btn_network"
+                android:layout_width="match_parent" android:layout_height="44dp"
+                android:text="📡 تحسين الشبكة"
+                android:textSize="13sp" android:textColor="#e8eaf0"
+                android:backgroundTint="#0d1525" android:layout_marginBottom="6dp"/>
+            <Button android:id="@+id/btn_clearcache"
+                android:layout_width="match_parent" android:layout_height="44dp"
+                android:text="🗑️ مسح الكاشات"
+                android:textSize="13sp" android:textColor="#e8eaf0"
+                android:backgroundTint="#0d1525" android:layout_marginBottom="6dp"/>
+            <Button android:id="@+id/btn_touchboost"
+                android:layout_width="match_parent" android:layout_height="44dp"
+                android:text="👆 Touch Boost"
+                android:textSize="13sp" android:textColor="#e8eaf0"
+                android:backgroundTint="#0d1525"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🕹️ ألعابك" android:textColor="#ff2244"
+            android:textSize="12sp" android:fontFamily="monospace"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:background="@drawable/card_bg"
+            android:padding="12dp" android:layout_marginBottom="8dp"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="⚽ eFootball 2026"
+                android:textColor="#e8eaf0" android:textSize="14sp" android:textStyle="bold"/>
+            <Button android:id="@+id/btn_opt_efootball"
+                android:layout_width="wrap_content" android:layout_height="36dp"
+                android:text="تحسين" android:textSize="12sp" android:textColor="#ffffff"
+                android:backgroundTint="#2a0a1a" android:layout_marginEnd="6dp"/>
+            <Button android:id="@+id/btn_launch_efootball"
+                android:layout_width="wrap_content" android:layout_height="36dp"
+                android:text="▶ تشغيل" android:textSize="12sp" android:textColor="#ffffff"
+                android:backgroundTint="#ff2244"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:background="@drawable/card_bg"
+            android:padding="12dp" android:layout_marginBottom="14dp"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="🔥 Free Fire MAX"
+                android:textColor="#e8eaf0" android:textSize="14sp" android:textStyle="bold"/>
+            <Button android:id="@+id/btn_opt_freefire"
+                android:layout_width="wrap_content" android:layout_height="36dp"
+                android:text="تحسين" android:textSize="12sp" android:textColor="#ffffff"
+                android:backgroundTint="#2a0a1a" android:layout_marginEnd="6dp"/>
+            <Button android:id="@+id/btn_launch_freefire"
+                android:layout_width="wrap_content" android:layout_height="36dp"
+                android:text="▶ تشغيل" android:textSize="12sp" android:textColor="#ffffff"
+                android:backgroundTint="#ff2244"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="📋 سجل العمليات" android:textColor="#ff2244"
+            android:textSize="12sp" android:fontFamily="monospace"
+            android:layout_marginBottom="8dp"/>
+
+        <ScrollView android:id="@+id/scroll_log"
+            android:layout_width="match_parent" android:layout_height="160dp"
+            android:background="#020408">
+            <TextView android:id="@+id/tv_log"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textColor="#4ade80" android:textSize="11sp"
+                android:fontFamily="monospace" android:padding="10dp"
+                android:lineSpacingMultiplier="1.6"/>
+        </ScrollView>
+
+        <View android:layout_width="match_parent" android:layout_height="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
